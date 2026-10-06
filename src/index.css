@@ -1,0 +1,124 @@
+body{
+    background-image: url("./assets/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-title{
+    text-align: center;
+    color: rgb(159 173 216 / 0.85);
+}
+.quote-screen {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+    margin: 10px auto;
+    backdrop-filter: blur(2px);
+    border-radius: 40px;
+    text-align: center;
+    background-color: rgb(159 173 216 / 0.44);
+    font-size: 1.2rem;
+    height: 50%;
+    padding: 1rem;
+    color: rgb(255 255 255 / 0.79);
+    min-width: 450px;
+    max-width: 900px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+.quote-container{
+    min-height: 500px;
+}
+
+
+.image {
+    display: block;
+    max-height: 600px;
+    width: 300px;
+    margin: 0 auto 1.5rem;
+    border-radius: 18px;
+    opacity: 0.9;
+    object-fit: contain;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+}
+
+.image-hidden{
+    cursor: pointer;
+    filter: blur(15px);
+    border: 3px solid black;
+}
+
+.quote-item-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.vndb-item {
+    max-width: 330px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .image{
+        margin-top: 2rem;
+    }
+}
+
+a{
+    color: #51ffdd;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+a:visited{
+    color: #51ffdd;
+}
+
+.quote-display{
+    font-size: 28px;
+    white-space: pre-line;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+
+/*-----------------*/
+
+
+
+
+input[type="text"],
+button {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    transition: 0.2s ease;
+}
+
+input[type="text"] {
+    background: rgba(255, 255, 255, 0.85);
+    color: #333;
+    width: 250px;
+}
+
+button {
+    background: rgba(80, 100, 180, 0.95);
+
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 10px;
+}
+button:hover {
+    background: rgba(100, 120, 200, 0.85);
+}
+button:active {
+    background: rgba(120, 140, 220, 1);
+    transform: translateY(5px);
+}
+
+.new-quote{
+    margin-right: 20px;
+}
+
